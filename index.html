@@ -13,11 +13,11 @@
       <!-- Start section -->
       <div class="screen active" id="start-screen">
         <h1>Quiz Time!</h1>
-        <p>Test your knowledge with these funy questions</p>
-        <button id="start-btn" type="button">Start Quiz</button>
+        <p>Test your knowledge with these fun questions </p>
+        <button class="btn" id="start-btn" type="button">Start Quiz</button>
       </div>
 
-      <!-- Question Container -->
+      <!-- Question Section -->
       <div class="screen" id="quiz-screen">
         <div class="quiz-header">
           <h2 id="question-text">Question goes here</h2>
@@ -29,7 +29,11 @@
             <p>Score: <span id="score">0</span></p>
           </div>
         </div>
+
+        <!-- Answer Buttons -->
         <div id="answers-container" class="answers-container">
+          <button class="answer-btn">Hellomiko</button>
+          <button class="answer-btn">Miko</button>
           <!-- Answer buttons will be inserted here from JS code -->
         </div>
         <div class="progress-bar">
@@ -37,7 +41,7 @@
         </div>
       </div>
 
-      <!-- Result Container -->
+      <!-- Result Section -->
       <div id="result-screen" class="screen">
         <h1>Quiz Results</h1>
         <div class="result-info">
@@ -46,7 +50,7 @@
             <span id="max-score">5</span>
           </p>
           <div id="result-message">Good job!</div>
-          <button type="button" id="restart-btn">Restart Quizes</button>
+          <button class="btn" type="button" id="restart-btn">Restart Quiz</button>
         </div>
       </div>
     </div>

@@ -22,13 +22,14 @@ body {
     color: #EAE0CF;
     box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    width: 90%;
-    max-width: 600px;
+    scroll-behavior: smooth;
+    width: 95%;
+    max-width: 650px;
     position: relative;
 }
 /* Disable all screen */
 .screen {
-    display: none;
+    /* display: none; */
     padding: 2rem;
     text-align: center;
 }
@@ -36,3 +37,110 @@ body {
 .active {
     display: block;
 }
+
+#start-screen h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+#start-screen p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+.quiz-header {
+    margin-bottom: 1rem;
+}
+.quiz-header h2 {
+    margin-bottom: 1rem;
+}
+.quiz-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+.answer-btn {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #EAE0CF;
+    padding: 0.8rem;
+    border: 2px solid #EAE0CF;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+.answer-btn:hover {
+    border: 2px solid #111844;
+    background-color: #7288AE;
+}
+.answer-btn.correct {
+    background-color: #cdf7de;
+    border-color: #9ef6c4;
+    color: #10932f;
+}
+.answer-btn.incorrect {
+    background-color: #ffcece;
+    border-color: #f9a3a3;
+    color: #e02538;
+}
+.progress-bar {
+    background-color: #EAE0CF;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.progress {
+    height: inherit;
+    background-color:#e02538;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+.btn {
+    /* Dimensions and spacing */
+    padding: 12px 24px;
+    margin: 8px;
+    
+    /* Typography */
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    
+    /* Colors and appearance */
+    background-color: #EAE0CF;
+    color: #111844;
+    border: none;
+    border-radius: 6px;
+    
+    /* Interactivity */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease;
+}
+
+/* Hover state - indicates the button is clickable */
+.btn:hover {
+    color: #EAE0CF;
+    background-color: #4B5694;
+}
+
+/* Active/Click state - mimics a physical press */
+.btn:active {
+    background-color: #7288AE;
+    transform: translateY(1px);
+}
+
+/* Disabled state - removes interaction and fades the button */
+.btn:disabled {
+    background-color: #e0e0e0;
+    color: #EAE0CF;
+    cursor: not-allowed;
+    transform: none;
+}
+
