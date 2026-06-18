@@ -1,0 +1,38 @@
+/* Basic Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAE0CF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    padding: 1rem;
+    font-family: poppins, sans-serif;
+}
+/* Container base style */
+.container {
+    background-color: #111844;
+    border-radius: 1rem;
+    color: #EAE0CF;
+    box-shadow: 5px 5px 20px 3px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+/* Disable all screen */
+.screen {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+/* Activate the courant screen */
+.active {
+    display: block;
+}
